@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D Graphic Demo</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <input type ="button" id = "undo" value ="undo" class="game">
+    <input type ="button" id = "redo" value ="redo" class="game">
+    <input type ="button" id = "reset" value ="reset" class="game">
+
+    <div class="top-row">
+        <div class="deck" id="stack-0"ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="deck" id="stack-1"></div>
+        <div class="deck" id="stack-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="deck" id="stack-3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="deck" id="stack-4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="deck" id="stack-5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    
+
+    <div class="bottom-row">
+        <div class="deck" id="stack-0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="deck" id="stack-1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="deck" id="stack-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="deck" id="stack-3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="deck" id="stack-4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="deck" id="stack-5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="deck" id="stack-6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+* 
+{
+    color: #000;
+    background: #06911b;
+    box-sizing: border-box;
+    
+}
+
+.top-row
+{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.top-row .deck
+{
+    width: 100px;
+    height: 150px;
+    border: 2px solid;
+    border-radius: 4px;
+    border-color: rgb(11, 204, 229);
+    margin: 20px;
+    
+}
+
+.top-row .deck:first-child,
+.top-row .deck:nth-child(2) 
+{
+  margin-right: 20px;
+}
+
+.top-row .deck:nth-child(3) 
+{
+    margin-left: 160px;
+}
+
+.bottom-row
+{
+    display: flex;
+    margin-top: 10px; 
+    align-items: flex-end;
+}
+
+.bottom-row .deck
+{
+    width: 100px;
+    height: 150px;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: rgb(11, 204, 229);
+    margin: 20px;
+    position: relative;
+}
+
+
+
+
+.card 
+{
+    width: 100px;
+    height: 150px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    overflow: visible;
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: all .5s ease;
+}
+
+
+
+.card.face
+{
+    position: absolute;
+    backface-visibility: visible;
+    background: #FFF;
+    
+}
+    
+
+.card.back 
+{
+    position: absolute;
+    backface-visibility: visible;
+    background: rgb(158, 6, 6);
+    transform: rotateY(180deg);
+    
+}
+
+.card.face:hover 
+{
+    border: 2px solid;
+    border-color: rgb(229, 203, 11);
+}
+
+.game
+{
+    border-radius: 4px;
+}
+
+.game#undo
+{
+    background-image: url('assets/undo.svg');
+    position: relative;
+    object-fit: cover;
+}
