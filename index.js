@@ -159,6 +159,7 @@ $(document).ready(function()
         if (firstCard.length) 
         {
             var cardId = firstCard.attr("id");
+            firstCard.animate({left: '170px'});
             firstCard.toggleClass("back face");
             firstCard.attr("src", `assets/${cardId}.png`); //make the last card face up
             $("#stack-1").append(firstCard); // Move the card to the target deck
@@ -173,13 +174,18 @@ $(document).ready(function()
  
     }
 
-    function resetDeck() // resets the deck
-    {
-        array.forEach(element => {
-            $("#stack-1").pop(element);
-            element.toggleClass("back face");
-            element.attr("src", "assets/back-maroon.png");
-            $("#stack-0").push(element);
+    function resetDeck() {
+        $(".top-row .deck").each(function() {
+            var stackId = $(this).attr("id");
+            var cards = $(this).children(".card");
+            
+            cards.each(function() {
+                
+                $(this).toggleClass("back face");
+                $(this).attr("src", "assets/back-maroon.png");
+            });
+    
+            $(".top-row .deck#stack-0").append(cards.get().reverse());
         });
     }
 
@@ -263,12 +269,12 @@ $(document).ready(function()
 
     
 
-    $("#card").click(flipCard)
+    //$("#card").click(flipCard)
     $(".undo").click(undoAction)
     $(".redo").click(redoAction)
     $(".reset").click(resetGame)
 
-    $(".top-row .deck").on("click", drawCard); //only the last card can be drawn
+    $(".top-row .deck#stack-0").on("click", drawCard); //only the last card can be drawn
 
     
     //$("#stack-1.card").click(flipCard);
