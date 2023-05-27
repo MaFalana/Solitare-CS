@@ -5,6 +5,7 @@ I tried recreated the beloved card game Solitare using Html, CSS, JS, and jQuery
 
 I learned i could use multpile js files and export classes/functions
 ## Compiling
-Just go to the site and [play](https://pages.github.iu.edu/mfalana/CSCI43700_summer23_A2/) 
+Just go to the [site](https://pages.github.iu.edu/mfalana/CSCI43700_summer23_A2/) and play around.
+ 
 #### Notes
-Thw suits of hearts and diamonds in a contemporary deck of playing cards are colored red, while the suits of clubs and spades are colored black
+The solitare game is not finished but you can move your mouse around on the canvas, draw a card, and flip some as well
