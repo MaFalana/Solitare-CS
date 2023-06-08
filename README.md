@@ -58,6 +58,10 @@ While the current version of Solitaire CS offers a limited set of features, ther
 
 By implementing these enhancements and addressing the unfinished aspects, Solitaire CS can evolve into a fully functional and enjoyable Solitaire game for players to immerse themselves in the classic card game experience.
 
+## Acknowledgements
 
+Inspiration, code snippets, etc.
+
+- [Card Icons](https://github.com/htdebeer/SVG-cards)
 
 
