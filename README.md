@@ -37,7 +37,7 @@ Throughout the development of my 2D Graphic Demo, several valuable lessons were 
 
 ## Compiling
 
-To play Solitaire CS, simply visit the [website](https://pages.github.iu.edu/mfalana/CSCI43700_summer23_A2/) and start exploring the game.
+To play Solitaire CS, simply visit the [website](https://mafalana.github.io/Solitare-CS/) and start exploring the game.
 **Note:** Please be aware that the Solitaire game is not yet finished. However, you can move your mouse around on the canvas, draw cards, and flip some of them.
 
 ## Future Improvements
