@@ -1,7 +1,7 @@
 # Solitare CS
 
 ## Description
-
+CSCI43700_summer23_A2
 I tried recreated the beloved card game Solitare using a combination of Html, CSS, JS, and jQuery. Since this is our second assignment I thought it would best to build on what I learned from the last one. So I wanted to include state functionality, which is also a common feature of Solitare being able to undo and redo moves. I learned i could use multpile js files and export classes/functions. I also misunderstood this current assignment a bit, in hindsight I could have used the canvas to create the patterns for my playing cards. Creating the function that lets the user see the trail of their mouse was difficult enough but rewarding. Now in regards to the Solitare section, the game functionality includes:
 
 - **Creating the Playing Field**: The `createBoard()` function creates the initial playing field by generating and positioning the cards on the game board.
